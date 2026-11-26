@@ -210,7 +210,24 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 /* =========================================================
    PROFILE PAGES
    ========================================================= */
-.phero { padding: clamp(32px, 6vw, 72px) 0; }
+.phero {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(32px, 6vw, 72px) 0;
+}
+.phero--sutd { --campus-image: url("../img/sutd-campus.webp"); }
+.phero--technion { --campus-image: url("../img/technion-campus.webp"); }
+.phero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 16%;
+  background:
+    linear-gradient(to bottom, transparent 55%, var(--bg)),
+    linear-gradient(to right, var(--bg), transparent 55%),
+    var(--campus-image) center 46% / cover;
+  opacity: .30;
+}
 .phero__layout {
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(180px, 320px);
   align-items: center; gap: clamp(24px, 5vw, 72px);
@@ -222,9 +239,16 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .phero__photo { margin: 0; width: 100%; aspect-ratio: 1; background: var(--panel); }
 .phero__photo img { width: 100%; height: 100%; object-fit: contain; }
 .phero__photo .monogram { font-size: clamp(72px, 10vw, 120px); }
-.phero__role { color: var(--mute); font-size: 15px; font-weight: 600; margin: 8px 0 14px; }
+.phero__role { font-size: 15px; font-weight: 600; margin: 8px 0 14px; }
 .phero__intro p:last-child { max-width: 48ch; color: #2a3c5a; }
 @media (max-width: 580px) {
+  .phero::before {
+    inset: 0;
+    background:
+      linear-gradient(to bottom, transparent 34%, var(--bg) 95%),
+      var(--campus-image) center 44% / cover;
+    opacity: .23;
+  }
   .phero__layout { grid-template-columns: 1fr; }
   .phero__photo { max-width: 240px; }
 }
