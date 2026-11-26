@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yeow Meng Chee — CTC 2026 Honouree</title>
   <meta name="description" content="Professor Yeow Meng Chee, Provost of the Singapore University of Technology and Design: biography, career, honours, research and selected publications.">
-  <link rel="preload" href="assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" href="assets/fonts/crimson-pro-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>:root { --name-size: 12.6vw; }</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="nav">
   <div class="wrap nav__inner">
-    <a class="nav__brand" href="index.html" aria-label="VIASM — CTC 2026 home"><img src="assets/img/viasm-logo.png" width="957" height="255" alt="VIASM — Viện Nghiên cứu cao cấp về Toán"></a>
+    <a class="nav__brand" href="index.html" aria-label="CTC 2026 home — VIASM and VinUniversity">
+      <img src="assets/img/viasm-logo.png" width="957" height="255" alt="VIASM">
+      <img class="nav__logo--vinuni" src="assets/img/vinuni-logo.png" width="360" height="221" alt="VinUniversity">
+    </a>
     <nav class="nav__links" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="index.html#honour" aria-current="page">Honourees</a>
@@ -26,15 +27,17 @@
 </header>
 
 <main id="main">
-  <section class="phero" data-name="Yeow Meng Chee">
-    <div class="reveal"><h1 class="phero__name">Yeow Meng Chee</h1></div>
-    <figure class="phero__photo reveal" data-photo>
-      <img src="assets/img/chee.png" alt="Portrait of Professor Yeow Meng Chee">
-      <span class="monogram" aria-hidden="true">YMC</span>
-    </figure>
-    <div class="phero__intro reveal">
-      <p class="phero__role">Provost, SUTD</p>
-      <p>A combinatorialist who has spent his career between mathematics, computer science and the building of universities and start-ups in Singapore.</p>
+  <section class="phero">
+    <div class="wrap phero__layout">
+      <div class="phero__intro">
+        <h1 class="phero__name">Yeow Meng Chee</h1>
+        <p class="phero__role">Provost, SUTD</p>
+        <p>A combinatorialist who has spent his career between mathematics, computer science and the building of universities and start-ups in Singapore.</p>
+      </div>
+      <figure class="phero__photo" data-photo>
+        <img src="assets/img/chee.png" alt="Portrait of Professor Yeow Meng Chee">
+        <span class="monogram" aria-hidden="true">YMC</span>
+      </figure>
     </div>
   </section>
 
@@ -51,7 +54,7 @@
 
   <div class="wrap">
     <!-- About -->
-    <section class="block" id="about" data-name="About">
+    <section class="block" id="about">
       <h2>About</h2>
       <div class="prose">
         <p class="lede">Professor Chee Yeow Meng is Provost and Chief Academic &amp; Innovation Officer of the Singapore University of Technology and Design, and Cheng Tsang Man Chair Professor.</p>
@@ -67,7 +70,7 @@
     </section>
 
     <!-- Career -->
-    <section class="block" id="career" data-name="Career">
+    <section class="block" id="career">
       <h2>Career</h2>
       <div>
         <p class="sub">Education, University of Waterloo, Canada</p>
@@ -98,7 +101,7 @@
     </section>
 
     <!-- Honours -->
-    <section class="block" id="honours" data-name="Honours and service">
+    <section class="block" id="honours">
       <h2>Honours and service</h2>
       <div>
         <ol class="timeline">
@@ -115,7 +118,7 @@
     </section>
 
     <!-- Research -->
-    <section class="block" id="research" data-name="Research">
+    <section class="block" id="research">
       <h2>Research</h2>
       <div>
         <div class="interests">
@@ -127,7 +130,7 @@
     </section>
 
     <!-- Publications -->
-    <section class="block" id="publications" data-name="Selected publications">
+    <section class="block" id="publications">
       <h2>Selected publications</h2>
       <div>
         <ol class="pubs">
@@ -157,7 +160,7 @@
     </section>
 
     <!-- Joint work -->
-    <section class="block" id="joint" data-name="With Tuvi Etzion">
+    <section class="block" id="joint">
       <h2>With Tuvi Etzion</h2>
       <div>
         <p class="joint-intro">The two honourees have written together on thermal-management codes, de Bruijn sequences and recovery sets, often with Han Mao Kiah, Alexander Vardy and Vũ Văn Khu.</p>

@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CTC 2026 — Mini-course and Workshop on Coding Theory and Combinatorics</title>
   <meta name="description" content="Mini-course and Workshop on Coding Theory and Combinatorics, 1–5 December 2026, VIASM and VinUniversity, Hanoi. In honour of Professor Yeow Meng Chee and Professor Tuvi Etzion.">
-  <link rel="preload" href="assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" href="assets/fonts/crimson-pro-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -14,26 +13,31 @@
 
 <header class="nav">
   <div class="wrap nav__inner">
-    <a class="nav__brand" href="index.html" aria-label="VIASM — CTC 2026 home"><img src="assets/img/viasm-logo.png" width="957" height="255" alt="VIASM — Viện Nghiên cứu cao cấp về Toán"></a>
+    <a class="nav__brand" href="index.html" aria-label="CTC 2026 home — VIASM and VinUniversity">
+      <img src="assets/img/viasm-logo.png" width="957" height="255" alt="VIASM">
+      <img class="nav__logo--vinuni" src="assets/img/vinuni-logo.png" width="360" height="221" alt="VinUniversity">
+    </a>
     <nav class="nav__links" aria-label="Main">
       <a href="#about">About</a>
       <a href="#honour">Honourees</a>
       <a href="#programme">Programme</a>
       <a href="#speakers">Speakers</a>
+      <a href="https://forms.gle/mkSYdP5ByqmbCSqA8">Register</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
   <!-- ================= HERO ================= -->
-  <section class="hero" data-name="Home">
+  <section class="hero">
     <div class="wrap">
-      <p class="hero__lead reveal">Mini-course and workshop on</p>
-      <h1 class="hero__title reveal"><span>Coding theory</span><span>&amp; combinatorics</span></h1>
-      <div class="hero__meta reveal">
+      <p class="hero__lead">Mini-course and workshop on</p>
+      <h1 class="hero__title">Coding Theory and Combinatorics</h1>
+      <div class="hero__meta">
         <p class="hero__when"><strong>1–5 December 2026</strong><span>VIASM and VinUniversity, Hanoi</span></p>
         <div class="hero__actions">
-          <a class="btn btn--light" href="#programme">See the programme</a>
+          <a class="btn btn--primary" href="https://forms.gle/mkSYdP5ByqmbCSqA8">Register</a>
+          <a class="btn" href="#programme">See the programme</a>
           <a class="btn" href="#honour">Meet the honourees</a>
         </div>
       </div>
@@ -41,11 +45,21 @@
   </section>
 
   <!-- ================= ABOUT ================= -->
-  <section class="section" id="about" data-name="About">
+  <section class="section" id="about">
     <div class="wrap">
       <figure class="about__photo"><img src="assets/img/viasm-building.jpg" width="1440" height="450" alt="VIASM campus courtyard in the evening"></figure>
       <div class="about__grid">
-        <h2 class="about__statement">Five days of lectures and research talks on error-correcting codes, combinatorial designs and the mathematics of data storage.</h2>
+        <div>
+          <h2 class="about__statement">Workshop objectives</h2>
+          <p class="about__objective">The mini-course introduces Vietnamese students and early-career researchers to coding theory and combinatorics, with applications in communication, data storage, and cryptography. The workshop brings Vietnamese and international researchers together to share recent results and start new collaborations.</p>
+          <div class="about__cols about__venues">
+            <div>
+              <h3>Venues</h3>
+              <p><strong>1–3 and 5 December</strong><br>VIASM, 161 Huynh Thuc Khang Street, Hanoi</p>
+              <p><strong>4 December</strong><br>VinUniversity, Vinhomes Ocean Park, Gia Lam, Hanoi</p>
+            </div>
+          </div>
+        </div>
         <div class="about__cols">
           <div><h3>Days 1–3 · Mini-course</h3><p>The first three days are a mini-course for students and early-career researchers at the Vietnam Institute for Advanced Study in Mathematics (VIASM). Lectures start from Hamming distance and linear codes and build up to permutation codes, constrained coding and codes for DNA-based storage.</p></div>
           <div><h3>Days 4–5 · Workshop</h3><p>The last two days are a research workshop at VinUniversity and VIASM, with a keynote, invited talks, short talks by PhD students and young researchers, and an open problem session. The workshop honours Professor Yeow Meng Chee and Professor Tuvi Etzion for their contributions to the field.</p></div>
@@ -55,7 +69,7 @@
   </section>
 
   <!-- ================= HONOUREES ================= -->
-  <section class="section" id="honour" data-name="Honourees">
+  <section class="section" id="honour">
     <header class="wrap section-head">
       <h2>In honour of</h2>
       <p>Two careers in codes, sequences and designs, from Waterloo and Haifa to Singapore.</p>
@@ -70,7 +84,7 @@
           <h3 class="honoree__name">Yeow Meng Chee</h3>
           <p class="honoree__role">Provost and Chief Academic &amp; Innovation Officer, Singapore University of Technology and Design</p>
           <p class="honoree__note">PhD, University of Waterloo. Works on combinatorial designs, coding theory and extremal set systems.</p>
-          <a class="btn btn--light" href="chee.html" aria-label="Read full profile of Yeow Meng Chee">Read full profile</a>
+          <a class="text-link" href="chee.html" aria-label="Read full profile of Yeow Meng Chee">Read full profile</a>
         </div>
       </article>
       <article class="honoree">
@@ -82,14 +96,14 @@
           <h3 class="honoree__name">Tuvi Etzion</h3>
           <p class="honoree__role">Professor, Henry and Marilyn Taub Faculty of Computer Science, Technion – Israel Institute of Technology</p>
           <p class="honoree__note">D.Sc., Technion. Works on de Bruijn sequences, perfect codes and network coding. Keynote speaker on 4 December.</p>
-          <a class="btn btn--light" href="etzion.html" aria-label="Read full profile of Tuvi Etzion">Read full profile</a>
+          <a class="text-link" href="etzion.html" aria-label="Read full profile of Tuvi Etzion">Read full profile</a>
         </div>
       </article>
     </div>
   </section>
 
   <!-- ================= PROGRAMME ================= -->
-  <section class="section" id="programme" data-name="Programme">
+  <section class="section" id="programme">
     <header class="wrap section-head">
       <h2>Programme</h2>
       <p>Three days of lectures, then two days of research talks.</p>
@@ -171,7 +185,7 @@
   </section>
 
   <!-- ================= SPEAKERS ================= -->
-  <section class="section" id="speakers" data-name="Speakers">
+  <section class="section" id="speakers">
     <header class="wrap section-head">
       <h2>Speakers</h2>
       <p>Lecturers of the mini-course and speakers of the workshop.</p>
@@ -192,11 +206,12 @@
 
 <footer class="footer">
   <div class="wrap">
-    <p class="footer__big">Hanoi,<br>December 2026</p>
+    <p class="footer__big">Hanoi, December 2026</p>
     <div class="footer__row">
       <p>Mini-course and Workshop on Coding Theory and Combinatorics</p>
       <p><a href="https://viasm.edu.vn" target="_blank" rel="noopener">VIASM</a> &nbsp;/&nbsp; <a href="https://vinuni.edu.vn" target="_blank" rel="noopener">VinUniversity</a></p>
     </div>
+    <p class="footer__contact">Contact: Ms. Lại Thị Thùy Linh · <a href="mailto:lttlinh@viasm.edu.vn">lttlinh@viasm.edu.vn</a></p>
   </div>
 </footer>
 
