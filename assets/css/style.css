@@ -322,6 +322,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .pubs .yr { font-family: var(--f-serif); font-weight: 500; font-size: 24px; line-height: 1.2; color: var(--mute); }
 .pubs .t { font-size: 17px; line-height: 1.4; }
 .pubs .v { display: block; font-family: var(--f-serif); font-style: italic; font-size: 16px; color: var(--mute); margin-top: 4px; }
+.pubs .pub-summary { margin-top: 8px; font-size: 15px; line-height: 1.6; }
 .joint-intro { max-width: 60ch; font-size: 17px; line-height: 1.7; color: #2a3c5a; margin-bottom: 28px; }
 .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
 
