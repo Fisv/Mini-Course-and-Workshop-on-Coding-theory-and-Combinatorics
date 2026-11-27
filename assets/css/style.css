@@ -282,7 +282,9 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .prose .lede { font-family: var(--f-serif); font-size: clamp(24px, 2.4vw, 32px); line-height: 1.3; color: var(--ink); max-width: 34ch; margin-bottom: 1em; }
 
 .profile-highlights { max-width: 66ch; border-top: 1px solid var(--line); }
-.profile-highlights li { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.profile-highlights > li { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.profile-citations { margin-top: 10px; padding-inline-start: 1.15em; list-style: disc; color: var(--mute); font-size: 14px; }
+.profile-citations li + li { margin-top: 4px; }
 .profile-highlights a, .profile-source { text-decoration: underline; text-underline-offset: 3px; }
 .profile-source { color: var(--mute); }
 .profile-students { list-style: disc; padding-inline-start: 1.25em; margin-bottom: 12px; }
