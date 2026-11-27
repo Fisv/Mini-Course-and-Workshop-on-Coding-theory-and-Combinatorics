@@ -131,7 +131,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
    ========================================================= */
 .section { padding: clamp(48px, 7vw, 88px) 0; }
 .section + .section { border-top: 1px solid var(--line); }
-.hero + .section { padding-top: 0; }
+.campus-banner + .section { padding-top: 0; }
 .about__photo { margin: 0 0 clamp(28px, 5vw, 52px); aspect-ratio: 16 / 5; }
 .about__photo img { width: 100%; height: 100%; object-fit: cover; }
 .about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); align-items: start; }
