@@ -2,7 +2,7 @@
    CTC 2026 — Mini-course and Workshop on Coding Theory and Combinatorics
    Shared styles for index.html, chee.html, etzion.html
    ========================================================= */
-@import url("fonts.css");
+@import url("fonts.css?v=20261127c");
 
 :root {
   --bg: #f6f7f8;
@@ -300,11 +300,11 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .timeline .what { font-size: 16px; line-height: 1.5; }
 .timeline .what span { display: block; color: var(--mute); font-size: 14px; margin-top: 2px; }
 .alumni { border-top: 1px solid var(--line); max-width: 66ch; }
-.alumni li { display: grid; gap: 2px; padding: 14px 0; border-bottom: 1px solid var(--line); }
-.alumni__name { font-family: var(--f-serif); font-size: 21px; line-height: 1.25; color: var(--ink); }
+.alumni li { display: grid; gap: 1px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.alumni__name { font-family: var(--f-serif); font-size: 19px; line-height: 1.25; color: var(--ink); }
 .alumni__name span { font-family: var(--f-sans); font-size: 14px; color: var(--mute); }
 .alumni__meta { font-size: 13px; color: var(--mute); }
-.alumni__thesis { font-size: 15px; font-style: italic; color: #2a3c5a; margin-top: 2px; }
+.alumni__thesis { font-size: 14.5px; font-style: italic; color: #2a3c5a; margin-top: 2px; }
 .alumni__now { font-size: 14px; color: var(--ink); }
 .alumni__now::before { content: "Now · "; color: var(--mute); }
 .alumni__more { margin-top: 20px; font-size: 15px; color: var(--mute); max-width: 66ch; }
