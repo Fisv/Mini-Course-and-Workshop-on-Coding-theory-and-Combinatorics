@@ -2,7 +2,7 @@
    CTC 2026 — Mini-course and Workshop on Coding Theory and Combinatorics
    Shared styles for index.html, chee.html, etzion.html
    ========================================================= */
-@import url("fonts.css");
+@import url("fonts.css?v=20261127d");
 
 :root {
   --bg: #f6f7f8;
@@ -300,11 +300,11 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .timeline .what { font-size: 16px; line-height: 1.5; }
 .timeline .what span { display: block; color: var(--mute); font-size: 14px; margin-top: 2px; }
 .alumni { border-top: 1px solid var(--line); max-width: 66ch; }
-.alumni li { display: grid; gap: 2px; padding: 14px 0; border-bottom: 1px solid var(--line); }
-.alumni__name { font-family: var(--f-serif); font-size: 21px; line-height: 1.25; color: var(--ink); }
+.alumni li { display: grid; gap: 1px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.alumni__name { font-family: var(--f-serif); font-size: 19px; line-height: 1.25; color: var(--ink); }
 .alumni__name span { font-family: var(--f-sans); font-size: 14px; color: var(--mute); }
 .alumni__meta { font-size: 13px; color: var(--mute); }
-.alumni__thesis { font-size: 15px; font-style: italic; color: #2a3c5a; margin-top: 2px; }
+.alumni__thesis { font-size: 14.5px; font-style: italic; color: #2a3c5a; margin-top: 2px; }
 .alumni__now { font-size: 14px; color: var(--ink); }
 .alumni__now::before { content: "Now · "; color: var(--mute); }
 .alumni__more { margin-top: 20px; font-size: 15px; color: var(--mute); max-width: 66ch; }
@@ -342,12 +342,15 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   *, *::before, *::after { transition: none !important; }
 }
 
-/* ---------- Scroll progress (horizontal, under the sticky header) ---------- */
-.sprog { position: fixed; z-index: 45; left: 0; right: 0; top: 0; height: 2px; pointer-events: none; }
-.sprog__fill { position: absolute; inset: 0; background: var(--ink); transform-origin: left; transform: scaleX(0); }
+/* ---------- Scroll progress (vertical, right edge) ---------- */
+.sprog { position: fixed; z-index: 45; right: 22px; top: 96px; bottom: 32px; width: 1px; background: var(--line); pointer-events: none; }
+.sprog__fill { position: absolute; inset: 0; background: var(--ink); transform-origin: top; transform: scaleY(0); }
+.sprog__dot { position: absolute; left: -4px; top: -4px; width: 9px; height: 9px; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 3px var(--bg); }
 .sprog__label {
-  position: absolute; left: 0; top: 8px; white-space: nowrap;
-  padding: 4px 10px; border-radius: 999px; background: var(--ink); color: var(--bg); box-shadow: 0 0 0 3px var(--bg);
-  font-size: 11px; font-weight: 500; line-height: 1.3; letter-spacing: .02em;
+  position: absolute; top: 0; left: -11px; writing-mode: vertical-rl; white-space: nowrap;
+  padding: 10px 4px; border-radius: 999px; background: var(--ink); color: var(--bg); box-shadow: 0 0 0 3px var(--bg);
+  font-size: 11px; font-weight: 500; line-height: 1.3; letter-spacing: .04em;
 }
+@media (max-width: 1240px) { .sprog { right: 10px; } }
+@media (max-width: 760px) { .sprog { right: 6px; } .sprog__label { display: none; } }
 @media print { .sprog { display: none; } }
